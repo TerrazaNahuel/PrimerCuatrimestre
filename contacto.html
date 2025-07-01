@@ -1,26 +1,59 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Nahuel Axel Terraza</title>
+    <!-- Asegúrate de que la ruta a tu archivo estilo.css sea correcta -->
     <link rel="stylesheet" type="text/css" href="estilo.css">
-    <title>Nahuel Axel Terraza</title>
 </head>
 <body>
-    <h1>Desarrollador de Software</h1>
-    <a href="https://www.linkedin.com/in/nahuel-terraza-/" ">Perfil de linkedin</a>
-    <h2>Correo electronico: nhlterraza@gmail.com</h2>
-    <h3>Numero de celular: 2473-507040</h3>
-    <h4>Localidad: Colón, Buenos Aires, Argentina</h4>
-    <h5>¿Quieres que te contacte? deja tus datos asi nos ponemos en contacto.</h5>
-    <form>
-        <input type="text" placeholder="Escribe tu nombre">
-        <input type="email" placeholder="Escribe tu email">
-        <input type="text" placeholder="Propuesta">
-        <input type="radio">
-        <input type="file">
-        <input type="date">
-        <input type="submit">
-    </form>
-      <footer>
-        <div class="texto_footer"> <P> "Sitio creado por Nahuel Terraza"</P> </div>
-      </footer>
+    <!-- Estructura de Header y Nav para que los estilos de navegación se apliquen -->
+    <header>
+        <nav>
+            <ul>
+                <li> <a href="index.html"> Inicio</a> </li>
+                <li> <a href="Empresa.html"> Empresa</a> </li>
+                <li> <a href="Galeria.html"> Galeria</a> </li>
+                <li> <a href="contacto.html"> Contacto</a> </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="contact-container">
+            <div class="contact-form">
+                <h1>Desarrollador de Software</h1>
+                <p>Puedes contactarme a través de:</p>
+                <p><strong>Correo electrónico:</strong> nhlterraza@gmail.com</p>
+                <p><strong>Número de celular:</strong> 2473-507040</p>
+                <p><strong>Localidad:</strong> Colón, Buenos Aires, Argentina</p>
+                <p><strong><a href="https://www.linkedin.com/in/nahuel-terraza-/" target="_blank" rel="noopener noreferrer">Perfil de LinkedIn</a></strong></p>
+
+                <h2>¿Quieres que te contacte? Deja tus datos aquí:</h2>
+                <form action="#" method="POST">
+                    <!-- Se recomienda un 'action' y 'method' para formularios reales -->
+                    <div class="form-group">
+                        <label for="name">Nombre:</label>
+                        <input type="text" id="name" name="name" placeholder="Escribe tu nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo Electrónico:</label>
+                        <input type="email" id="email" name="email" placeholder="Escribe tu email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="proposal">Propuesta:</label>
+                        <textarea id="proposal" name="proposal" placeholder="Tu propuesta o mensaje"></textarea>
+                    </div>
+                    <!-- Eliminados los inputs de radio, file y date para simplificar el formulario de contacto básico -->
+                    <button type="submit" class="submit-button">Enviar Mensaje</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="texto_footer"> <p> "Sitio creado por Nahuel Terraza"</p> </div>
+    </footer>
 </body>
+</html>
