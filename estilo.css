@@ -66,3 +66,206 @@ margin: 0px auto;
 color:rgb(120, 120, 120);
 padding-top:40px;
 height:150px;}
+body {
+    font-family: 'Arial', sans-serif; /* Fuente base para la página */
+    margin: 0; /* Elimina el margen por defecto del body */
+    padding: 0; /* Elimina el padding por defecto del body */
+    background-color: #f4f7f6; /* Un color de fondo suave para la página */
+    color: #333; /* Color de texto principal */
+    line-height: 1.6; /* Espaciado entre líneas para mejor legibilidad */
+}
+
+/* Contenedor principal de la página de contacto */
+.contact-container {
+    max-width: 800px; /* Ancho máximo para centrar el contenido */
+    margin: 40px auto; /* Centra el contenedor horizontalmente y añade margen superior/inferior */
+    padding: 30px; /* Espaciado interno */
+    background-color: #ffffff; /* Fondo blanco para el contenido */
+    border-radius: 12px; /* Esquinas ligeramente redondeadas */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Sombra sutil para profundidad */
+    text-align: center; /* Centra el texto dentro del contenedor */
+}
+
+/* --- Estilos del Encabezado (Header) --- */
+header {
+    background-color: #2c3e50; /* Color de fondo oscuro para el encabezado */
+    color: #ffffff; /* Texto blanco en el encabezado */
+    padding: 20px 0; /* Espaciado vertical */
+    text-align: center; /* Centra el contenido del encabezado */
+    border-bottom: 4px solid #3498db; /* Borde inferior para un toque de color */
+}
+
+header h1 {
+    margin: 0; /* Elimina el margen por defecto del h1 */
+    font-size: 2.5em; /* Tamaño de fuente grande para el título principal */
+    letter-spacing: 1px; /* Espaciado entre letras */
+}
+
+/* --- Estilos de la Navegación (Nav) --- */
+nav ul {
+    list-style: none; /* Quita los puntos de la lista */
+    padding: 0; /* Quita el padding por defecto */
+    margin: 0; /* Quita el margen por defecto */
+    display: flex; /* Usa flexbox para alinear los elementos en una fila */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: center; /* Alinea los elementos verticalmente */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en pantallas pequeñas */
+}
+
+nav ul li {
+    margin: 10px 20px; /* Espacio entre los elementos de la lista */
+}
+
+nav ul li a {
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    color: #ffffff; /* Color de texto blanco para los enlaces de navegación */
+    font-size: 1.1em; /* Tamaño de fuente uniforme */
+    font-weight: bold; /* Texto en negrita */
+    padding: 8px 15px; /* Espaciado interno para los enlaces */
+    border-radius: 6px; /* Esquinas redondeadas para los botones de navegación */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave al pasar el ratón */
+}
+
+nav ul li a:hover {
+    background-color: #3498db; /* Fondo azul al pasar el ratón */
+    color: #ffffff; /* Texto blanco al pasar el ratón */
+}
+
+/* --- Estilos del Formulario de Contacto --- */
+.contact-form h2 {
+    font-size: 2em; /* Tamaño de fuente para el título del formulario */
+    color: #2c3e50; /* Color oscuro para el título */
+    margin-bottom: 25px; /* Margen inferior */
+}
+
+.form-group {
+    margin-bottom: 20px; /* Espacio entre grupos de formulario */
+    text-align: left; /* Alinea el texto de las etiquetas a la izquierda */
+}
+
+.form-group label {
+    display: block; /* Hace que la etiqueta ocupe su propia línea */
+    margin-bottom: 8px; /* Espacio entre la etiqueta y el input */
+    font-weight: bold; /* Texto de etiqueta en negrita */
+    color: #555; /* Color de texto para las etiquetas */
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: calc(100% - 20px); /* Ancho completo menos el padding */
+    padding: 12px 10px; /* Espaciado interno */
+    border: 1px solid #ccc; /* Borde gris claro */
+    border-radius: 8px; /* Esquinas redondeadas */
+    font-size: 1em; /* Tamaño de fuente */
+    box-sizing: border-box; /* Incluye padding y borde en el ancho total */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Transición suave al enfocar */
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group textarea:focus {
+    border-color: #3498db; /* Borde azul al enfocar */
+    box-shadow: 0 0 8px rgba(52, 152, 219, 0.3); /* Sombra suave al enfocar */
+    outline: none; /* Elimina el contorno por defecto del navegador */
+}
+
+.form-group textarea {
+    resize: vertical; /* Permite redimensionar verticalmente */
+    min-height: 120px; /* Altura mínima para el área de texto */
+}
+
+.submit-button {
+    background-color: #28a745; /* Fondo verde para el botón de enviar */
+    color: #ffffff; /* Texto blanco */
+    padding: 14px 25px; /* Espaciado interno */
+    border: none; /* Sin borde */
+    border-radius: 8px; /* Esquinas redondeadas */
+    font-size: 1.1em; /* Tamaño de fuente */
+    cursor: pointer; /* Cambia el cursor a una mano al pasar por encima */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Transición suave al pasar el ratón */
+    font-weight: bold; /* Texto en negrita */
+}
+
+.submit-button:hover {
+    background-color: #218838; /* Verde más oscuro al pasar el ratón */
+    transform: translateY(-2px); /* Pequeño efecto de elevación */
+}
+
+/* --- Estilos del Pie de Página (Footer) --- */
+footer {
+    background-color: #2c3e50; /* Color de fondo oscuro para el pie de página */
+    color: #ffffff; /* Texto blanco */
+    text-align: center; /* Centra el texto */
+    padding: 20px 0; /* Espaciado vertical */
+    margin-top: 40px; /* Margen superior para separarlo del contenido */
+    border-top: 4px solid #3498db; /* Borde superior para un toque de color */
+}
+
+footer p {
+    margin: 0; /* Elimina el margen por defecto del párrafo */
+    font-size: 0.9em; /* Tamaño de fuente ligeramente más pequeño */
+}
+
+/* --- Clases de Utilidad (si las usas) --- */
+.clear {
+    clear: both; /* Para limpiar flotantes */
+}
+
+/* --- Media Queries para Responsividad --- */
+@media (max-width: 768px) {
+    .contact-container {
+        margin: 20px; /* Reduce el margen en pantallas más pequeñas */
+        padding: 20px; /* Reduce el padding */
+    }
+
+    header h1 {
+        font-size: 2em; /* Ajusta el tamaño del título del encabezado */
+    }
+
+    nav ul li {
+        margin: 8px 10px; /* Reduce el espacio entre elementos de navegación */
+    }
+
+    nav ul li a {
+        font-size: 1em; /* Ajusta el tamaño de fuente de los enlaces de navegación */
+        padding: 6px 12px;
+    }
+
+    .contact-form h2 {
+        font-size: 1.8em; /* Ajusta el tamaño del título del formulario */
+    }
+
+    .form-group input[type="text"],
+    .form-group input[type="email"],
+    .form-group textarea {
+        width: 100%; /* Asegura que los campos ocupen todo el ancho */
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    nav ul {
+        flex-direction: column; /* Apila los elementos de navegación verticalmente */
+        align-items: stretch; /* Estira los elementos para ocupar el ancho disponible */
+    }
+
+    nav ul li {
+        margin: 5px 0; /* Espacio vertical entre elementos apilados */
+    }
+
+    nav ul li a {
+        text-align: center; /* Centra el texto en los enlaces apilados */
+    }
+
+    .contact-form h2 {
+        font-size: 1.5em;
+    }
+
+    .submit-button {
+        width: 100%; /* Botón ocupa todo el ancho en móviles muy pequeños */
+    }
+}
