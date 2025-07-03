@@ -282,7 +282,7 @@ img{
     flex-wrap: wrap;
 }
 .columna{
-    flex: 20%;
+    flex: 25%;
     padding: 5px;
 }
 .columna img{
@@ -290,6 +290,6 @@ img{
 }
 @media(max-width: 600px){
     .columna{
-        flex: 25%;
+        flex: 100%;
     }
 }
