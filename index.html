@@ -8,7 +8,25 @@
 <html>
 
 <body>
+            <div class="relative h-screen w-full flex items-center justify-center text-center bg-cover bg-center"
+        style="background-image: url('vase.png');">
 
+        <!-- Capa oscura semitransparente para mejorar la legibilidad del texto -->
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+
+        <!-- Contenido de la portada -->
+        <div class="relative z-10 max-w-4xl p-8 bg-white bg-opacity-20 rounded-lg shadow-xl backdrop-blur-sm text-white">
+            <h1 class="text-5xl md:text-7xl font-extrabold mb-4 leading-tight drop-shadow-lg">
+                Bienvenido TerraCompany
+            </h1>
+            <p class="text-xl md:text-2xl mb-8 font-light drop-shadow-md">
+                Descubre un mundo de posibilidades.
+            </p>
+            <a href="#contenido-principal" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-full text-lg transition duration-300 ease-in-out shadow-lg">
+                Explorar Ahora
+            </a>
+        </div>
+        </div>   
     <header>
 
         <div class="logo.png">
@@ -26,14 +44,32 @@
     </header>
     <div class="Hero Section">
     </div>
-    <main>
-        <section>
-            <h1> Titulo 1 </h1>
-            <h2> Titulo 2 </h2>
-            <h3> Titulo 3 </h3>
-            <h4> Titulo 4 </h4>
-            <P> Texto de Parrafo <P>
-        </section>
+     <div class="Hero Section">
+        </div>
+        <<main id="contenido-principal" class="container mx-auto mt-8 p-6 bg-white rounded-lg shadow-lg">
+            <section>
+                <h1> TerraCompany </h1>
+                <p>es una empresa especializada en el diseño, desarrollo y mantenimiento de aplicaciones y sitios web. 
+                    Su objetivo principal es ofrecer soluciones tecnológicas a empresas y particulares para mejorar su 
+                    presencia digital y optimizar sus procesos mediante herramientas digitales innovadoras. La empresa 
+                    cuenta con un equipo de profesionales altamente capacitados en programación, diseño y usabilidad, 
+                    que trabajan en diferentes plataformas y lenguajes de programación como HTML, CSS, JavaScript y frameworks modernos. 
+                    Además, se enfocan en crear productos personalizados, eficientes y seguros, adaptados a las necesidades específicas de cada cliente. 
+                    Gracias a su experiencia, TerraCompany ha logrado consolidarse como un referente en el mercado de desarrollo web, 
+                    ayudando a sus clientes a alcanzar sus metas a través de soluciones digitales de alta calidad.</p>
+                <h2> Diseño web: </h2>
+                <p>La empresa se enfoca en crear interfaces atractivas, intuitivas y fáciles de usar. Prioriza la experiencia del usuario (UX) y la estética visual, 
+                    utilizando técnicas modernas de diseño responsive para que las páginas web se adapten a cualquier dispositivo, ya sea computadora, tablet o smartphone. 
+                    Sus diseños están pensados para captar la atención y brindar una navegación sencilla.</p>
+                <h3> Bases de datos: </h3>
+                <p>Para gestionar la información de sus proyectos, TerraCompany trabaja con bases de datos robustas y seguras, como MySQL, PostgreSQL o MongoDB. 
+                    Esto permite a sus aplicaciones manejar grandes volúmenes de datos de forma eficiente, asegurando la integridad y confidencialidad de la información. 
+                    La gestión de bases de datos es fundamental para ofrecer soluciones dinámicas que respondan a las necesidades del cliente en tiempo real.</p>
+                <h4> Trabajo con MVC: </h4>
+                <P> La empresa utiliza el patrón de arquitectura Modelo-Vista-Controlador (MVC) en el desarrollo de sus aplicaciones web. Este enfoque facilita la separación de responsabilidades, 
+                        lo que permite un desarrollo más organizado, mantenible y escalable. Mediante MVC, se garantiza que el código sea modular,
+                        facilitando futuras modificaciones y mejoras sin afectar toda la estructura del sistema. <P>
+            </section>
         <aside>
             <P> Contenido de barra lateral <P>
         </aside>
