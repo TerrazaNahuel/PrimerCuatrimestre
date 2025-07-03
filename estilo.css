@@ -269,6 +269,10 @@ footer p {
         width: 100%; /* Botón ocupa todo el ancho en móviles muy pequeños */
     }
 }
+body{
+    margin: 0;
+    padding: 0;
+}
 img{
     width: 100%;
 }
