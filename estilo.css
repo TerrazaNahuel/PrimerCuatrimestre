@@ -269,7 +269,7 @@ footer p {
         width: 100%; /* Botón ocupa todo el ancho en móviles muy pequeños */
     }
 }
-.body{
+body{
     margin: 0;
     padding: 0;
 }
