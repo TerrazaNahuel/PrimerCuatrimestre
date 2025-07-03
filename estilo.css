@@ -18,7 +18,14 @@ overflow: auto;}
 margin: 10px;
 float:left;}
 
-.logo img{width: 170px;
+.logo {
+    width: 300px;
+    margin: 10px;
+    float: left;
+}
+
+.logo img {
+    width: 170px;
 }
 
 nav{float:right;
