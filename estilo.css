@@ -269,3 +269,23 @@ footer p {
         width: 100%; /* Botón ocupa todo el ancho en móviles muy pequeños */
     }
 }
+img{
+    width: 100%;
+}
+.row{
+    display: flex;
+    padding: 5px;
+    flex-wrap: wrap;
+}
+.columna{
+    flex: 20%;
+    padding: 5px;
+}
+.columna img{
+    margin-top: 5px;
+}
+@media(max-width: 600px){
+    .columna{
+        flex: 25%;
+    }
+}
